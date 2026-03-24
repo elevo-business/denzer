@@ -1,14 +1,44 @@
 <!DOCTYPE html>
+<!--
+    ============================================================
+    DENTZER IMMOBILIEN — Website nach ELEVO Framework v4.0
+    ============================================================
+    
+    ⚠️ BILD-INVENTAR — VOR DEPLOY ERLEDIGEN:
+    
+    LOGO: 
+    → Von dentzer-immobilien.de extrahieren (Jimdo-Header)
+    → Aktuell: ProvenExpert-Profilbild als Platzhalter
+    → Ziel: Echtes Logo in Header, Footer, Favicon, OG einsetzen
+    
+    PORTRAIT ANNE DENTZER:
+    → Auf dentzer-immobilien.de/ueber-mich/ vorhanden
+    → MUSS von Original-Website extrahiert oder direkt von Anne angefordert werden
+    → Aktuell: Text-basierter Platzhalter mit ProvenExpert-Bild (Framework-konform)
+    → KEIN Stockphoto als Ersatz! (Framework-Regel: Authentizität > Stock)
+    
+    LEISTUNGS-BILDER (Tabs):
+    → Stock-Atmosphäre-Bilder (Unsplash) — OK laut Framework Stufe 2
+    → Bei echtem Bildmaterial von Anne (Exposés, Fotos ihrer Arbeit) ersetzen
+    
+    IMMOBILIEN-FOTOS:
+    → Aktuelle Objekte von dentzer-immobilien.de/immobilienangebote extrahieren
+    → Optional: Referenz-Galerie mit verkauften Objekten ergänzen
+    
+    ProvenExpert: 177+ Bewertungen (Stand: März 2026)
+    ============================================================
+-->
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DENTZER IMMOBILIEN — Deine Immobilienmaklerin in Stolberg & Städteregion Aachen</title>
-    <meta name="description" content="Anne Dentzer — Inhabergeführte Immobilienmaklerin mit 176+ Bewertungen. Kostenlose Wertermittlung, professionelle Fotos, persönliche Betreuung in Stolberg, Eschweiler und Aachen.">
+    <meta name="description" content="Anne Dentzer — Inhabergeführte Immobilienmaklerin mit 177+ Bewertungen. Kostenlose Wertermittlung, professionelle Fotos, persönliche Betreuung in Stolberg, Eschweiler und Aachen.">
     <meta name="keywords" content="Immobilienmakler Stolberg, Haus verkaufen Stolberg, Immobilienbewertung Aachen, Makler Eschweiler, Immobilien Städteregion Aachen">
     <meta property="og:title" content="DENTZER IMMOBILIEN — Persönlich. Kompetent. Erfolgreich.">
-    <meta property="og:description" content="176+ Bewertungen. Inhabergeführt. Deine Maklerin für die Städteregion Aachen.">
+    <meta property="og:description" content="177+ Bewertungen. Inhabergeführt. Deine Maklerin für die Städteregion Aachen.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.provenexpert.com/0f/d3/d67c50a935a2157cf99445dcbb31/dentzer-immobilien_medium_1586331507.jpg">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a3c34'/><text x='16' y='22' text-anchor='middle' fill='%23c9a96e' font-family='serif' font-size='20' font-weight='bold'>D</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1329,6 +1359,7 @@
             .hero-ctas .btn { text-align: center; justify-content: center; }
             .testimonial-badge-row { flex-direction: column; gap: 1rem; }
             #tippgeber > .container > div { grid-template-columns: 1fr !important; }
+            .about-content div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 480px) {
             .trust-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1344,8 +1375,9 @@
         <div class="container">
             <div class="nav-inner">
                 <a href="#hero" class="nav-logo">
-                    <div class="nav-logo-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                    <div class="nav-logo-icon" style="background:transparent;border-radius:6px;overflow:hidden;">
+                        <!-- ⚠️ Echtes Logo von dentzer-immobilien.de hier einsetzen wenn verfügbar -->
+                        <img src="https://images.provenexpert.com/0f/d3/d67c50a935a2157cf99445dcbb31/dentzer-immobilien_medium_1586331507.jpg" alt="DENTZER IMMOBILIEN Logo" style="width:40px;height:40px;object-fit:contain;border-radius:6px;">
                     </div>
                     <span class="nav-logo-text">DENTZER</span>
                 </a>
@@ -1373,7 +1405,7 @@
                         Inhabergeführt · Städteregion Aachen
                     </div>
                     <h1 class="word-reveal">Dein Haus verdient mehr als einen Makler. <em>Es verdient Vertrauen.</em></h1>
-                    <p class="subline">Du willst verkaufen — aber richtig. Mit jemandem, der deine Region kennt, dein Haus versteht und dich nicht allein lässt. 176 Bewertungen sagen: Hier bist du richtig.</p>
+                    <p class="subline">Du willst verkaufen — aber richtig. Mit jemandem, der deine Region kennt, dein Haus versteht und dich nicht allein lässt. 177 Bewertungen sagen: Hier bist du richtig.</p>
                     <div class="hero-ctas">
                         <a href="#quickcheck" class="btn btn-primary">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
@@ -1387,7 +1419,7 @@
                     <div class="hero-trust">
                         <div class="hero-trust-item">
                             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                            176+ Bewertungen
+                            177+ Bewertungen
                         </div>
                         <div class="hero-trust-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -1416,7 +1448,7 @@
                             </div>
                             <div class="hero-review-badge-text">
                                 <strong>ProvenExpert</strong>
-                                176+ verifizierte Bewertungen
+                                177+ verifizierte Bewertungen
                             </div>
                         </div>
                     </div>
@@ -1430,7 +1462,7 @@
         <div class="container">
             <div class="trust-grid">
                 <div class="trust-item reveal">
-                    <div class="trust-number" data-target="176" data-suffix="+">0</div>
+                    <div class="trust-number" data-target="177" data-suffix="+">0</div>
                     <div class="trust-label">Verifizierte Bewertungen</div>
                 </div>
                 <div class="trust-item reveal reveal-delay-1">
@@ -1719,11 +1751,21 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image reveal">
-                    <div class="about-image-main">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Anne Dentzer — Immobilienmaklerin Stolberg" loading="lazy">
+                    <div class="about-image-main" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg, var(--forest) 0%, var(--forest-light) 100%);">
+                        <!-- ⚠️ PLATZHALTER: Echtes Foto von Anne Dentzer hier einsetzen!
+                             Das Foto ist auf dentzer-immobilien.de/ueber-mich/ vorhanden.
+                             Bild-URL von der Jimdo-Seite extrahieren und hier als <img> einsetzen.
+                             Alternativ: Anne bitten, ihr bestes Portrait-Foto zu senden.
+                             KEIN Stockphoto — Framework-Regel: Authentizität schlägt Stockphoto. -->
+                        <div style="text-align:center;padding:2rem;">
+                            <img src="https://images.provenexpert.com/0f/d3/d67c50a935a2157cf99445dcbb31/dentzer-immobilien_medium_1586331507.jpg" alt="DENTZER IMMOBILIEN Logo" style="width:120px;height:120px;object-fit:contain;border-radius:12px;margin-bottom:1.5rem;background:white;padding:0.75rem;">
+                            <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:500;margin-bottom:0.5rem;">Anne Dentzer</p>
+                            <p style="font-size:0.9rem;color:rgba(255,255,255,0.7);">Inhaberin & Immobilienmaklerin</p>
+                            <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-top:0.25rem;">Ausgebildete Fotografin</p>
+                        </div>
                     </div>
                     <div class="about-image-float">
-                        <div class="about-image-float-number">176+</div>
+                        <div class="about-image-float-number">177+</div>
                         <div class="about-image-float-text">Bewertungen auf<br>ProvenExpert</div>
                     </div>
                 </div>
@@ -1731,7 +1773,7 @@
                     <p class="eyebrow reveal">Über mich</p>
                     <h2 class="reveal">Anne Dentzer — deine Maklerin, nicht irgendeine Firma</h2>
                     <p class="subline reveal">Inhabergeführt bedeutet: Wenn du anrufst, gehe ich ran. Wenn du Fragen hast, antworte ich. Persönlich.</p>
-                    <p class="about-story reveal">Als Immobilienmaklerin in Stolberg und der Städteregion Aachen kenne ich nicht nur den Markt — ich kenne die Straßen, die Nachbarschaften und die Menschen. Meine zusätzliche Ausbildung als Fotografin ermöglicht es mir, jede Immobilie professionell in Szene zu setzen — von der Entpersonalisierung der Räume bis zum fertigen Exposé, alles aus einer Hand. Ich sammle keine Immobilienangebote — ich vermittle direkt an mein großes Netzwerk vorgemerkter Kaufinteressenten. Und ich erfülle alle Anforderungen der gesetzlichen Fortbildungspflicht — zu 100% mehr als gefordert. Was mich antreibt? Das Vertrauen meiner Kunden. 176 Bewertungen sind kein Zufall — sie sind das Ergebnis von Engagement, Ehrlichkeit und dem Anspruch, jeden Verkauf so zu begleiten, als wäre es mein eigener.</p>
+                    <p class="about-story reveal">Als Immobilienmaklerin in Stolberg und der Städteregion Aachen kenne ich nicht nur den Markt — ich kenne die Straßen, die Nachbarschaften und die Menschen. Meine zusätzliche Ausbildung als Fotografin ermöglicht es mir, jede Immobilie professionell in Szene zu setzen — von der Entpersonalisierung der Räume bis zum fertigen Exposé, alles aus einer Hand. Ich sammle keine Immobilienangebote — ich vermittle direkt an mein großes Netzwerk vorgemerkter Kaufinteressenten. Und ich erfülle alle Anforderungen der gesetzlichen Fortbildungspflicht — zu 100% mehr als gefordert. Was mich antreibt? Das Vertrauen meiner Kunden. 177 Bewertungen sind kein Zufall — sie sind das Ergebnis von Engagement, Ehrlichkeit und dem Anspruch, jeden Verkauf so zu begleiten, als wäre es mein eigener.</p>
                     <div class="about-highlights reveal">
                         <div class="about-highlight">
                             <div class="about-highlight-icon">
@@ -1756,6 +1798,23 @@
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                             </div>
                             <div class="about-highlight-text">Rundum-Service<span>Bewertung · Entrümpelung · Energieausweis · Notar</span></div>
+                        </div>
+                    </div>
+                    <div class="reveal" style="background:var(--cream);border-radius:12px;padding:1.5rem;margin-bottom:2rem;border:1px solid rgba(26,60,52,0.06);">
+                        <p style="font-size:0.82rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold-dark);margin-bottom:0.75rem;">Meine Leistungen im Überblick</p>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem 1.5rem;font-size:0.88rem;color:var(--text);">
+                            <span>✓ Kostenlose Marktwertermittlung</span>
+                            <span>✓ Professionelle Immobilienfotos</span>
+                            <span>✓ Hochwertiges Exposé</span>
+                            <span>✓ Nutzung des eigenen Käufernetzwerks</span>
+                            <span>✓ Vermarktung auf Portalen & Social Media</span>
+                            <span>✓ Durchführung der Besichtigungen</span>
+                            <span>✓ Bonitätsprüfung der Kaufinteressenten</span>
+                            <span>✓ Führung der Verkaufsverhandlungen</span>
+                            <span>✓ Vorbereitung des Kaufvertrags</span>
+                            <span>✓ Koordination des Notartermins</span>
+                            <span>✓ Erstellung des Energieausweises</span>
+                            <span>✓ Übergabe der Immobilie</span>
                         </div>
                     </div>
                     <a href="#kontakt" class="btn btn-primary reveal">Lass uns persönlich sprechen</a>
@@ -1786,15 +1845,15 @@
             <div class="testimonial-badge-row reveal">
                 <div class="testimonial-badge">
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="#c9a96e"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    <span><strong>4,9 / 5,0</strong> Durchschnitt</span>
+                    <span><strong>5,0 / 5,0</strong> auf ProvenExpert</span>
                 </div>
                 <div class="testimonial-badge">
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    <span><strong>176+</strong> verifizierte Bewertungen</span>
+                    <span><strong>4,74 / 5,0</strong> auf Google (39 Bew.)</span>
                 </div>
                 <div class="testimonial-badge">
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#c9a96e" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                    <span><strong>100%</strong> Empfehlungsrate</span>
+                    <span><strong>177+</strong> Bewertungen gesamt</span>
                 </div>
             </div>
         </div>
@@ -2015,8 +2074,9 @@
             <div class="footer-top">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <div class="footer-logo-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        <div class="footer-logo-icon" style="background:transparent;overflow:hidden;">
+                            <!-- ⚠️ Echtes Logo hier einsetzen wenn verfügbar -->
+                            <img src="https://images.provenexpert.com/0f/d3/d67c50a935a2157cf99445dcbb31/dentzer-immobilien_medium_1586331507.jpg" alt="DENTZER IMMOBILIEN Logo" style="width:44px;height:44px;object-fit:contain;border-radius:8px;">
                         </div>
                         <span class="footer-logo-text">DENTZER IMMOBILIEN</span>
                     </div>
@@ -2348,6 +2408,80 @@
         /* === TESTIMONIAL CARD TRANSITION === */
         const testimonialCardEl = document.getElementById('testimonialCard');
         testimonialCardEl.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+    </script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "DENTZER IMMOBILIEN",
+        "alternateName": "Dentzer Immobilien",
+        "description": "Inhabergeführte Immobilienmaklerin für die Städteregion Aachen. Kostenlose Wertermittlung, professionelle Fotos, persönliche Betreuung von der Bewertung bis zur Schlüsselübergabe.",
+        "url": "https://www.dentzer-immobilien.de",
+        "telephone": "+49-2402-9056532",
+        "email": "anne@dentzer-immobilien.de",
+        "founder": {
+            "@type": "Person",
+            "name": "Anne Dentzer",
+            "jobTitle": "Inhaberin & Immobilienmaklerin"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Fischbachstr. 8",
+            "addressLocality": "Stolberg",
+            "postalCode": "52224",
+            "addressRegion": "Nordrhein-Westfalen",
+            "addressCountry": "DE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.7686,
+            "longitude": 6.2264
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "09:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "14:00"
+            }
+        ],
+        "areaServed": [
+            {"@type": "City", "name": "Stolberg"},
+            {"@type": "City", "name": "Eschweiler"},
+            {"@type": "City", "name": "Aachen"},
+            {"@type": "City", "name": "Würselen"},
+            {"@type": "City", "name": "Alsdorf"},
+            {"@type": "City", "name": "Herzogenrath"}
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "bestRating": "5",
+            "ratingCount": "177",
+            "reviewCount": "177"
+        },
+        "makesOffer": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Immobilienverkauf"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kostenlose Immobilienbewertung"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Professionelle Immobilienfotografie"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Energieausweis"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Immobilienfinanzierung"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Erbimmobilien-Betreuung"}}
+        ],
+        "sameAs": [
+            "https://www.provenexpert.com/de-de/dentzer-immobilien/",
+            "https://www.facebook.com/dentzer.immobilien"
+        ],
+        "priceRange": "Auf Anfrage"
+    }
     </script>
 
     <!-- Google Ads gtag (Consent Mode) -->
