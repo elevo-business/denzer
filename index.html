@@ -1328,6 +1328,7 @@
             .hero-ctas { flex-direction: column; }
             .hero-ctas .btn { text-align: center; justify-content: center; }
             .testimonial-badge-row { flex-direction: column; gap: 1rem; }
+            #tippgeber > .container > div { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 480px) {
             .trust-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1352,7 +1353,7 @@
                     <li><a href="#leistungen">Leistungen</a></li>
                     <li><a href="#ueber">Über mich</a></li>
                     <li><a href="#stimmen">Kundenstimmen</a></li>
-                    <li><a href="#region">Einsatzgebiet</a></li>
+                    <li><a href="#tippgeber">Tippgeber</a></li>
                     <li><a href="#kontakt" class="nav-cta">Kostenlos beraten</a></li>
                 </ul>
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Menü">
@@ -1600,21 +1601,23 @@
                 <p class="reveal">Alles aus einer Hand — persönlich, professionell und immer in deinem Interesse.</p>
             </div>
             <div class="tabs-nav reveal">
-                <button class="tab-btn active" onclick="switchTab('verkauf')">Immobilienverkauf</button>
+                <button class="tab-btn active" onclick="switchTab('verkauf')">Verkauf</button>
                 <button class="tab-btn" onclick="switchTab('bewertung')">Wertermittlung</button>
                 <button class="tab-btn" onclick="switchTab('foto')">Fotografie & Exposé</button>
-                <button class="tab-btn" onclick="switchTab('beratung')">Beratung</button>
+                <button class="tab-btn" onclick="switchTab('finanzierung')">Finanzierung</button>
+                <button class="tab-btn" onclick="switchTab('energie')">Energieausweis</button>
+                <button class="tab-btn" onclick="switchTab('erbimmobilie')">Erbimmobilien</button>
             </div>
             <div class="tab-content active" id="tab-verkauf">
                 <div class="tab-layout">
                     <div class="tab-text">
-                        <h3>Dein Haus in den richtigen Händen</h3>
-                        <p>Von der ersten Einschätzung bis zum Notartermin — ich übernehme den kompletten Verkaufsprozess. Du lehnst dich zurück, ich kümmere mich um alles.</p>
+                        <h3>Kein Sammeln — direktes Vermitteln</h3>
+                        <p>Ich sammle keine Immobilienangebote. Jede Immobilie wird direkt meinen vorgemerkten Kaufinteressenten präsentiert und gezielt vermittelt. Dazu kommt die Vermarktung auf allen relevanten Portalen und Social Media — für maximale Reichweite.</p>
                         <ul class="tab-features">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Marktgerechte Preisermittlung mit lokaler Expertise</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Professionelle Vermarktung auf allen relevanten Portalen</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Bonitätsprüfung und Käuferauswahl</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Kaufvertragsabwicklung und Notarkoordination</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Direktvermittlung an vorgemerkte Kaufinteressenten</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Vermarktung auf Immobilienportalen, Website & Social Media</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Bonitätsprüfung und Finanzierungsberatung des Käufers</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Kaufvertragsvorbereitung und Notartermin-Begleitung</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Persönliche Begleitung bis zur Schlüsselübergabe</li>
                         </ul>
                     </div>
@@ -1627,11 +1630,11 @@
                 <div class="tab-layout">
                     <div class="tab-text">
                         <h3>Was ist deine Immobilie wirklich wert?</h3>
-                        <p>Keine Online-Schätzung, sondern eine fundierte Bewertung vor Ort. Ich kenne den Markt in Stolberg, Eschweiler und der gesamten Städteregion wie meine Westentasche.</p>
+                        <p>Keine Online-Schätzung, sondern eine fundierte Bewertung vor Ort. Lage, Zustand, Baujahr, Infrastruktur — plus eine Marktanalyse bereits verkaufter Objekte in deiner Umgebung. So entsteht ein realistischer Verkaufspreis, der weder abschreckt noch Geld verschenkt.</p>
                         <ul class="tab-features">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Kostenlose und unverbindliche Erstbewertung</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Vergleichswertanalyse aktueller Marktdaten</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Berücksichtigung lokaler Besonderheiten</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Kostenlose und unverbindliche Vor-Ort-Bewertung</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Vergleichswertanalyse veräußerter Objekte in der Umgebung</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Bewertung nach Lage, Zustand, Baujahr und Ausstattung</li>
                             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Ehrliche Einschätzung — auch wenn es unbequem ist</li>
                         </ul>
                     </div>
@@ -1644,12 +1647,12 @@
                 <div class="tab-layout">
                     <div class="tab-text">
                         <h3>Deine Immobilie ins beste Licht gerückt</h3>
-                        <p>Als ausgebildete Fotografin weiß ich, wie man Räume zum Strahlen bringt. Professionelle Fotos sind der Grundstein für jede erfolgreiche Vermarktung.</p>
+                        <p>Durch meine Zusatzausbildung als Fotografin weiß ich, wie man Räume wirken lässt. Vor dem Shooting kommt die Entpersonalisierung — aufräumen, umstellen, inszenieren. So entsteht ein Exposé, das beim Käufer sofort Neugier weckt.</p>
                         <ul class="tab-features">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Professionelles Immobilien-Shooting vor Ort</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Hochwertiges Exposé mit allen wichtigen Daten</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Home-Staging-Beratung für maximale Wirkung</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Vermarktung auf Website, Portalen und Social Media</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Entpersonalisierung und Vorbereitung der Wohnräume</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Professionelles Immobilien-Shooting mit Auge für Perspektive</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Hochwertiges Exposé — dient auch als Finanzierungsunterlage</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Veröffentlichung auf Website, Portalen und Facebook</li>
                         </ul>
                     </div>
                     <div class="tab-image">
@@ -1657,20 +1660,54 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-content" id="tab-beratung">
+            <div class="tab-content" id="tab-finanzierung">
                 <div class="tab-layout">
                     <div class="tab-text">
-                        <h3>Mehr als Verkaufen — gemeinsam die richtige Entscheidung treffen</h3>
-                        <p>Scheidung, Erbschaft, Altersvorsorge — hinter jedem Verkauf steht eine Geschichte. Ich nehme mir die Zeit, die es braucht.</p>
+                        <h3>Finanzierung? Auch dafür bin ich da</h3>
+                        <p>Nicht nur Verkäufer brauchen Unterstützung — auch Käufer profitieren von meiner Erfahrung. Gemeinsam mit meinem Finanzierungspartner Hüttig & Rumpf sorge ich dafür, dass die Finanzierung steht, bevor es zum Notar geht.</p>
                         <ul class="tab-features">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Persönliches Erstgespräch ohne Zeitdruck</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Unterstützung bei Finanzierungsfragen</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Energieausweis-Erstellung</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Koordination von Handwerkern und Gutachtern</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Unterstützung bei der Finanzierungsplanung für Käufer</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Zusammenarbeit mit Finanzierungspartner Hüttig & Rumpf</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Bonitätsprüfung des Kaufinteressenten</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Sicherheit für Verkäufer durch geprüfte Käufer</li>
                         </ul>
                     </div>
                     <div class="tab-image">
-                        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80" alt="Persönliche Beratung im Immobilienverkauf" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" alt="Immobilienfinanzierung und Beratung" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-energie">
+                <div class="tab-layout">
+                    <div class="tab-text">
+                        <h3>Energieausweis — unkompliziert und schnell</h3>
+                        <p>Seit 2014 ist der Energieausweis bei Verkauf oder Vermietung Pflicht. Ich kümmere mich um die Beantragung und Erstellung — ein Anruf genügt, den Rest erledige ich.</p>
+                        <ul class="tab-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Beantragung und Erstellung des Energieausweises</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Bedarfsausweis und Verbrauchsausweis</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Integration in Exposé und Inserate</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Beratung zu energetischen Anforderungen</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80" alt="Energieausweis für Immobilien" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-erbimmobilie">
+                <div class="tab-layout">
+                    <div class="tab-text">
+                        <h3>Haus geerbt? Ich begleite dich von Anfang an</h3>
+                        <p>Ein geerbtes Haus zu verkaufen ist oft überwältigend — emotional und organisatorisch. Von der Haushaltsauflösung über die Entrümpelung bis zum Verkauf: Ich koordiniere alles mit meinen bewährten Partnern.</p>
+                        <ul class="tab-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Begleitung von Übernahme bis Verkaufsabschluss</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Koordination von Entrümpelung und Haushaltsauflösung</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Kooperation mit kostengünstigen Fachunternehmen</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Du bestimmst den Leistungsumfang — ich den Rest</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80" alt="Erbimmobilie verkaufen mit Unterstützung" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -1694,31 +1731,31 @@
                     <p class="eyebrow reveal">Über mich</p>
                     <h2 class="reveal">Anne Dentzer — deine Maklerin, nicht irgendeine Firma</h2>
                     <p class="subline reveal">Inhabergeführt bedeutet: Wenn du anrufst, gehe ich ran. Wenn du Fragen hast, antworte ich. Persönlich.</p>
-                    <p class="about-story reveal">Als Immobilienmaklerin in Stolberg und der Städteregion Aachen kenne ich nicht nur den Markt — ich kenne die Straßen, die Nachbarschaften und die Menschen. Meine zusätzliche Ausbildung als Fotografin ermöglicht es mir, jede Immobilie professionell in Szene zu setzen — ohne externes Team, ohne Umwege. Was mich antreibt? Das Vertrauen meiner Kunden. 176 Bewertungen sind kein Zufall — sie sind das Ergebnis von Engagement, Ehrlichkeit und dem Anspruch, jeden Verkauf so zu begleiten, als wäre es mein eigener.</p>
+                    <p class="about-story reveal">Als Immobilienmaklerin in Stolberg und der Städteregion Aachen kenne ich nicht nur den Markt — ich kenne die Straßen, die Nachbarschaften und die Menschen. Meine zusätzliche Ausbildung als Fotografin ermöglicht es mir, jede Immobilie professionell in Szene zu setzen — von der Entpersonalisierung der Räume bis zum fertigen Exposé, alles aus einer Hand. Ich sammle keine Immobilienangebote — ich vermittle direkt an mein großes Netzwerk vorgemerkter Kaufinteressenten. Und ich erfülle alle Anforderungen der gesetzlichen Fortbildungspflicht — zu 100% mehr als gefordert. Was mich antreibt? Das Vertrauen meiner Kunden. 176 Bewertungen sind kein Zufall — sie sind das Ergebnis von Engagement, Ehrlichkeit und dem Anspruch, jeden Verkauf so zu begleiten, als wäre es mein eigener.</p>
                     <div class="about-highlights reveal">
                         <div class="about-highlight">
                             <div class="about-highlight-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
                             </div>
-                            <div class="about-highlight-text">Ausgebildete Fotografin<span>Professionelle Fotos inklusive</span></div>
-                        </div>
-                        <div class="about-highlight">
-                            <div class="about-highlight-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </div>
-                            <div class="about-highlight-text">Lokale Marktexpertin<span>Stolberg · Eschweiler · Aachen</span></div>
+                            <div class="about-highlight-text">Ausgebildete Fotografin<span>Professionelle Fotos & Exposés inklusive</span></div>
                         </div>
                         <div class="about-highlight">
                             <div class="about-highlight-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg>
                             </div>
-                            <div class="about-highlight-text">Großes Netzwerk<span>Käufer, Notar, Handwerker</span></div>
+                            <div class="about-highlight-text">Direktvermittlung<span>Eigenes Netzwerk vorgemerkter Käufer</span></div>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="about-highlight-text">Lokale Marktexpertin<span>Stolberg · Eschweiler · Aachen · Würselen</span></div>
                         </div>
                         <div class="about-highlight">
                             <div class="about-highlight-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                             </div>
-                            <div class="about-highlight-text">Fortbildungspflicht 100%+<span>Mehr als gesetzlich gefordert</span></div>
+                            <div class="about-highlight-text">Rundum-Service<span>Bewertung · Entrümpelung · Energieausweis · Notar</span></div>
                         </div>
                     </div>
                     <a href="#kontakt" class="btn btn-primary reveal">Lass uns persönlich sprechen</a>
@@ -1806,6 +1843,44 @@
         </div>
     </section>
 
+    <!-- TIPPGEBER -->
+    <section class="tippgeber" id="tippgeber" style="background:var(--cream-dark);">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+                <div class="reveal">
+                    <p class="eyebrow">Tippgeber-Programm</p>
+                    <h2>Du kennst jemanden, der verkaufen will? Das lohnt sich für dich</h2>
+                    <p style="color:var(--text-light);margin:1.25rem 0 1.5rem;line-height:1.8;">Nachbarn, Verwandte, Kollegen — du erfährst von Verkaufsabsichten oft als Erster. Gib mir den Tipp und verdiene dir einen Finderlohn. Sobald das Objekt erfolgreich vermittelt und die Courtage gezahlt wurde, erhältst du deine Tippgeber-Prämie per Überweisung.</p>
+                    <div style="background:white;border-radius:12px;padding:1.5rem;border:1px solid rgba(26,60,52,0.06);margin-bottom:1.5rem;">
+                        <p style="font-family:var(--font-display);font-size:1.1rem;color:var(--forest);font-weight:600;margin-bottom:0.75rem;">So funktioniert es:</p>
+                        <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+                                <span style="width:28px;height:28px;background:var(--forest);color:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;">1</span>
+                                <span style="font-size:0.92rem;color:var(--text);">Du erfährst von einer Verkaufsabsicht in deinem Umfeld</span>
+                            </div>
+                            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+                                <span style="width:28px;height:28px;background:var(--forest);color:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;">2</span>
+                                <span style="font-size:0.92rem;color:var(--text);">Du gibst mir den Tipp — telefonisch, per Mail oder WhatsApp</span>
+                            </div>
+                            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+                                <span style="width:28px;height:28px;background:var(--forest);color:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;">3</span>
+                                <span style="font-size:0.92rem;color:var(--text);">Nach erfolgreichem Verkauf erhältst du deinen Finderlohn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#kontakt" class="btn btn-primary">Tipp jetzt abgeben</a>
+                </div>
+                <div class="reveal reveal-delay-1" style="background:var(--forest);border-radius:16px;padding:2.5rem;color:var(--cream);">
+                    <p style="font-family:var(--font-display);font-size:1.8rem;font-weight:500;color:var(--gold);margin-bottom:1rem;line-height:1.2;">Dein Wissen ist bares Geld wert</p>
+                    <p style="color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:1.5rem;">Ob Nachbarschaftsgespräch, Familienfest oder Kollegengespräch — Verkaufsabsichten erfährt man oft nebenbei. Nutze deine Kontakte und werde Tippgeber.</p>
+                    <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1.25rem;">
+                        <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.6;">Auszahlung erfolgt direkt nach Eingang der Vermittlungscourtage per Überweisung. Die Höhe des Finderlohns richtet sich nach dem notariellen Kaufpreis. Bei mehreren Tipps zum gleichen Objekt erhält der erste Tippgeber die Prämie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA BAND -->
     <div class="cta-band">
         <div class="container">
@@ -1852,6 +1927,7 @@
                                 <option value="Wertermittlung">Ich möchte eine kostenlose Wertermittlung</option>
                                 <option value="Immobilie kaufen">Ich suche eine Immobilie</option>
                                 <option value="Beratung">Ich brauche Beratung</option>
+                                <option value="Tippgeber">Ich habe einen Tipp für eine Immobilie</option>
                                 <option value="Sonstiges">Sonstiges</option>
                             </select>
                         </div>
@@ -1906,6 +1982,24 @@
                             <span><a href="tel:+4915785651662">01578 — 565 16 62</a></span>
                         </div>
                     </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <strong>Erreichbarkeit</strong>
+                            <span>Mo — Fr: 09:00 — 19:00 Uhr<br>Sa: 09:00 — 14:00 Uhr</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <strong>Fax</strong>
+                            <span>02402 — 905 65 31</span>
+                        </div>
+                    </div>
                     <a href="https://wa.me/4915785651662?text=Hallo%20Frau%20Dentzer%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Immobilienbewertung." class="contact-whatsapp" target="_blank" rel="noopener">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         WhatsApp schreiben
@@ -1934,8 +2028,10 @@
                         <li><a href="#leistungen">Immobilienverkauf</a></li>
                         <li><a href="#quickcheck">Wertermittlung</a></li>
                         <li><a href="#leistungen">Fotografie & Exposé</a></li>
+                        <li><a href="#leistungen">Finanzierung</a></li>
                         <li><a href="#leistungen">Energieausweis</a></li>
-                        <li><a href="#kontakt">Beratung</a></li>
+                        <li><a href="#leistungen">Erbimmobilien</a></li>
+                        <li><a href="#tippgeber">Tippgeber-Programm</a></li>
                     </ul>
                 </div>
                 <div>
@@ -1981,7 +2077,7 @@
             <h3>Angaben gemäß § 5 TMG</h3>
             <p>DENTZER IMMOBILIEN<br>Inh. Anne Dentzer<br>Fischbachstr. 8<br>52224 Stolberg</p>
             <h3>Kontakt</h3>
-            <p>Telefon: +49 (0) 2402 — 905 65 32<br>Mobil: +49 (0) 1578 — 565 16 62<br>E-Mail: anne@dentzer-immobilien.de</p>
+            <p>Telefon: +49 (0) 2402 — 905 65 32<br>Fax: +49 (0) 2402 — 905 65 31<br>Mobil: +49 (0) 1578 — 565 16 62<br>E-Mail: anne@dentzer-immobilien.de</p>
             <h3>Umsatzsteuer-ID</h3>
             <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: [wird ergänzt]</p>
             <h3>Berufsbezeichnung und berufsrechtliche Regelungen</h3>
