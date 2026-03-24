@@ -1,0 +1,2274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENTZER IMMOBILIEN — Deine Immobilienmaklerin in Stolberg & Städteregion Aachen</title>
+    <meta name="description" content="Anne Dentzer — Inhabergeführte Immobilienmaklerin mit 176+ Bewertungen. Kostenlose Wertermittlung, professionelle Fotos, persönliche Betreuung in Stolberg, Eschweiler und Aachen.">
+    <meta name="keywords" content="Immobilienmakler Stolberg, Haus verkaufen Stolberg, Immobilienbewertung Aachen, Makler Eschweiler, Immobilien Städteregion Aachen">
+    <meta property="og:title" content="DENTZER IMMOBILIEN — Persönlich. Kompetent. Erfolgreich.">
+    <meta property="og:description" content="176+ Bewertungen. Inhabergeführt. Deine Maklerin für die Städteregion Aachen.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a3c34'/><text x='16' y='22' text-anchor='middle' fill='%23c9a96e' font-family='serif' font-size='20' font-weight='bold'>D</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* === RESET & BASE === */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --forest: #1a3c34;
+            --forest-light: #2a5c4e;
+            --forest-dark: #0f2820;
+            --gold: #c9a96e;
+            --gold-light: #ddc69a;
+            --gold-dark: #a8884d;
+            --cream: #faf7f2;
+            --cream-dark: #f0ebe3;
+            --warm-white: #fefdfb;
+            --text: #2c2c2c;
+            --text-light: #6b6b6b;
+            --text-muted: #999;
+            --shadow: rgba(26, 60, 52, 0.08);
+            --shadow-strong: rgba(26, 60, 52, 0.15);
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Outfit', -apple-system, sans-serif;
+        }
+
+        /* === HEADLINE SAFETY — PFLICHT === */
+        h1, h2, h3, h4, h5, h6,
+        .hero-title, .section-title, .headline,
+        [class*="title"], [class*="heading"] {
+            word-spacing: normal !important;
+            white-space: normal;
+            overflow-wrap: break-word;
+            text-rendering: optimizeLegibility;
+        }
+        h1 span, h2 span, h3 span,
+        .hero-title span, .section-title span {
+            display: inline;
+            word-spacing: normal;
+        }
+        .word-reveal span {
+            display: inline-block;
+            margin-right: 0.25em;
+        }
+        .word-reveal span:last-child {
+            margin-right: 0;
+        }
+        /* === ENDE HEADLINE SAFETY === */
+
+        html {
+            scroll-behavior: smooth;
+            scrollbar-color: var(--forest) var(--cream);
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--cream);
+            color: var(--text);
+            line-height: 1.7;
+            font-weight: 400;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === GRAIN OVERLAY === */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9998;
+            opacity: 0.025;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* === TYPOGRAPHY === */
+        h1 { font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; color: var(--forest); }
+        h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 500; line-height: 1.2; color: var(--forest); }
+        h3 { font-family: var(--font-display); font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 600; line-height: 1.3; color: var(--forest); }
+        p { font-size: 1.05rem; line-height: 1.75; color: var(--text); }
+        .eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--gold-dark);
+            margin-bottom: 0.75rem;
+        }
+        .subline {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            max-width: 560px;
+        }
+
+        /* === LAYOUT === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+        }
+        section {
+            padding: clamp(4rem, 8vw, 7rem) 0;
+        }
+
+        /* === NAVIGATION === */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: transparent;
+        }
+        .nav.scrolled {
+            background: rgba(250, 247, 242, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 1px 30px var(--shadow);
+            padding: 0.6rem 0;
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+            color: var(--forest);
+        }
+        .nav-logo-icon {
+            width: 40px; height: 40px;
+            background: var(--forest);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+        .nav-logo:hover .nav-logo-icon { transform: scale(1.05); }
+        .nav-logo-icon svg { width: 20px; height: 20px; }
+        .nav-logo-text {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: var(--text);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--forest); }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0;
+            width: 0; height: 2px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta {
+            background: var(--forest) !important;
+            color: var(--cream) !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 6px;
+            font-weight: 500 !important;
+            transition: all 0.3s !important;
+        }
+        .nav-cta:hover {
+            background: var(--forest-light) !important;
+            transform: translateY(-1px);
+        }
+        .nav-cta::after { display: none !important; }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        .mobile-toggle span {
+            display: block;
+            width: 24px; height: 2px;
+            background: var(--forest);
+            margin: 5px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+
+        /* === HERO === */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(165deg, var(--cream) 0%, var(--cream-dark) 50%, #e8e0d4 100%);
+            padding-top: 5rem;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%; right: -10%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(201,169,110,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -10%; left: -5%;
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(26,60,52,0.04) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .hero-content { position: relative; z-index: 2; }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(26, 60, 52, 0.06);
+            border: 1px solid rgba(26, 60, 52, 0.1);
+            padding: 0.45rem 1rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--forest);
+            margin-bottom: 1.5rem;
+        }
+        .hero-badge-dot {
+            width: 6px; height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .hero h1 {
+            margin-bottom: 1.5rem;
+            font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+        }
+        .hero h1 em {
+            color: var(--gold-dark);
+            font-style: italic;
+        }
+        .hero .subline {
+            margin-bottom: 2.5rem;
+            font-size: 1.15rem;
+        }
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 1.8rem;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-primary {
+            background: var(--forest);
+            color: var(--cream);
+        }
+        .btn-primary:hover {
+            background: var(--forest-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(26, 60, 52, 0.2);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--forest);
+            border: 1.5px solid var(--forest);
+        }
+        .btn-secondary:hover {
+            background: var(--forest);
+            color: var(--cream);
+            transform: translateY(-2px);
+        }
+        .btn svg { width: 18px; height: 18px; }
+        .hero-trust {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .hero-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        .hero-trust-item svg {
+            width: 16px; height: 16px;
+            color: var(--gold);
+        }
+        .hero-visual {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-visual-card {
+            position: relative;
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 20px 60px var(--shadow-strong);
+        }
+        .hero-visual-card::before {
+            content: '';
+            position: absolute;
+            top: -8px; right: -8px;
+            bottom: 8px; left: 8px;
+            border: 2px solid var(--gold-light);
+            border-radius: 16px;
+            z-index: -1;
+        }
+        .hero-stars {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 0.75rem;
+        }
+        .hero-stars svg { width: 20px; height: 20px; fill: var(--gold); }
+        .hero-review-text {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--forest);
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        .hero-review-author {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .hero-review-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--cream-dark);
+        }
+        .hero-review-badge-icon {
+            width: 36px; height: 36px;
+            background: var(--forest);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-review-badge-icon svg { width: 18px; height: 18px; color: var(--gold); }
+        .hero-review-badge-text {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+        .hero-review-badge-text strong {
+            display: block;
+            color: var(--forest);
+            font-size: 0.95rem;
+        }
+
+        /* === TRUST BAND === */
+        .trust-band {
+            background: var(--forest);
+            padding: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .trust-band::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, transparent 0%, rgba(201,169,110,0.05) 100%);
+            pointer-events: none;
+        }
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+        .trust-item { position: relative; }
+        .trust-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: -1rem; top: 10%; bottom: 10%;
+            width: 1px;
+            background: rgba(255,255,255,0.1);
+        }
+        .trust-number {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            color: var(--gold);
+            line-height: 1.1;
+        }
+        .trust-label {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.7);
+            margin-top: 0.25rem;
+            font-weight: 400;
+        }
+
+        /* === PROBLEM / IDENTIFICATION === */
+        .problem {
+            background: var(--warm-white);
+        }
+        .problem-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .problem h2 {
+            margin-bottom: 1.5rem;
+        }
+        .problem-text {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        .problem-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            margin-top: 2.5rem;
+        }
+        .problem-card {
+            background: var(--cream);
+            padding: 1.75rem 1.5rem;
+            border-radius: 12px;
+            text-align: left;
+            border: 1px solid rgba(26, 60, 52, 0.06);
+            transition: all 0.3s;
+        }
+        .problem-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px var(--shadow);
+        }
+        .problem-card-icon {
+            width: 44px; height: 44px;
+            background: rgba(26, 60, 52, 0.06);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        .problem-card-icon svg { width: 22px; height: 22px; color: var(--forest); }
+        .problem-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+        .problem-card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* === SIGNATURE FEATURE: QUICK CHECK === */
+        .quickcheck {
+            background: var(--forest);
+            position: relative;
+            overflow: hidden;
+        }
+        .quickcheck::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 20% 50%, rgba(201,169,110,0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .quickcheck-inner {
+            display: grid;
+            grid-template-columns: 0.4fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .quickcheck-info { position: sticky; top: 8rem; }
+        .quickcheck-info .eyebrow { color: var(--gold-light); }
+        .quickcheck-info h2 { color: var(--cream); margin-bottom: 1rem; }
+        .quickcheck-info p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; }
+        .quickcheck-info-steps {
+            list-style: none;
+        }
+        .quickcheck-info-steps li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
+            transition: color 0.3s;
+        }
+        .quickcheck-info-steps li.active { color: var(--gold); }
+        .quickcheck-info-steps li .step-num {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            border: 1.5px solid currentColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .quickcheck-info-steps li.active .step-num {
+            background: var(--gold);
+            color: var(--forest);
+            border-color: var(--gold);
+        }
+        .quickcheck-widget {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+        }
+        .qc-step { display: none; }
+        .qc-step.active { display: block; animation: fadeUp 0.4s ease; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .qc-step h3 {
+            color: var(--cream);
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+        }
+        .qc-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        .qc-option {
+            background: rgba(255,255,255,0.04);
+            border: 1.5px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 1.25rem;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            font-family: var(--font-body);
+        }
+        .qc-option:hover {
+            border-color: var(--gold);
+            background: rgba(201,169,110,0.08);
+            color: var(--gold);
+            transform: translateY(-2px);
+        }
+        .qc-option.selected {
+            border-color: var(--gold);
+            background: rgba(201,169,110,0.12);
+            color: var(--gold);
+        }
+        .qc-option-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .qc-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        .qc-btn {
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+        }
+        .qc-btn-back {
+            background: transparent;
+            color: rgba(255,255,255,0.5);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .qc-btn-back:hover { border-color: rgba(255,255,255,0.3); color: white; }
+        .qc-btn-next {
+            background: var(--gold);
+            color: var(--forest-dark);
+        }
+        .qc-btn-next:hover { background: var(--gold-light); transform: translateY(-1px); }
+        .qc-result {
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .qc-result-icon {
+            width: 64px; height: 64px;
+            background: rgba(201,169,110,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.25rem;
+        }
+        .qc-result-icon svg { width: 32px; height: 32px; color: var(--gold); }
+        .qc-result h3 { color: var(--gold); margin-bottom: 0.5rem; }
+        .qc-result p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .qc-result .btn-primary { background: var(--gold); color: var(--forest-dark); }
+        .qc-result .btn-primary:hover { background: var(--gold-light); }
+
+        /* === LEISTUNGEN (TABS) === */
+        .leistungen { background: var(--cream); }
+        .leistungen-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .leistungen-header h2 { margin-bottom: 0.75rem; }
+        .leistungen-header p { max-width: 580px; margin: 0 auto; color: var(--text-light); }
+        .tabs-nav {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            padding: 0.65rem 1.3rem;
+            border-radius: 100px;
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1.5px solid rgba(26, 60, 52, 0.12);
+            background: transparent;
+            color: var(--text-light);
+            transition: all 0.3s;
+        }
+        .tab-btn:hover {
+            border-color: var(--forest);
+            color: var(--forest);
+        }
+        .tab-btn.active {
+            background: var(--forest);
+            color: var(--cream);
+            border-color: var(--forest);
+        }
+        .tab-content { display: none; animation: fadeUp 0.4s ease; }
+        .tab-content.active { display: block; }
+        .tab-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .tab-text h3 { margin-bottom: 1rem; font-size: 1.5rem; }
+        .tab-text p { color: var(--text-light); margin-bottom: 1.5rem; }
+        .tab-features {
+            list-style: none;
+        }
+        .tab-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+        .tab-features li svg {
+            width: 18px; height: 18px;
+            color: var(--gold);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .tab-image {
+            background: var(--cream-dark);
+            border-radius: 16px;
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .tab-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .tab-image-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-muted);
+        }
+        .tab-image-placeholder svg { width: 48px; height: 48px; opacity: 0.4; }
+        .tab-image-placeholder span { font-size: 0.85rem; }
+
+        /* === UEBER ANNE === */
+        .about { background: var(--warm-white); }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-image {
+            position: relative;
+        }
+        .about-image-main {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: var(--cream-dark);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
+        .about-image-main img { width: 100%; height: 100%; object-fit: cover; }
+        .about-image-float {
+            position: absolute;
+            bottom: -1.5rem; right: -1.5rem;
+            background: var(--forest);
+            color: var(--cream);
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 12px 40px var(--shadow-strong);
+        }
+        .about-image-float-number {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .about-image-float-text {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        .about-content { }
+        .about-content h2 { margin-bottom: 1.25rem; }
+        .about-content .subline { margin-bottom: 1.5rem; }
+        .about-story {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .about-highlight {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .about-highlight-icon {
+            width: 36px; height: 36px;
+            background: rgba(201, 169, 110, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .about-highlight-icon svg { width: 18px; height: 18px; color: var(--gold-dark); }
+        .about-highlight-text {
+            font-size: 0.88rem;
+            color: var(--text);
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        .about-highlight-text span {
+            display: block;
+            font-weight: 400;
+            color: var(--text-light);
+            font-size: 0.82rem;
+        }
+
+        /* === TESTIMONIALS === */
+        .testimonials { background: var(--cream); }
+        .testimonials-header { text-align: center; margin-bottom: 3rem; }
+        .testimonials-header h2 { margin-bottom: 0.5rem; }
+        .testimonial-card {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+        .testimonial-quote {
+            font-family: var(--font-display);
+            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+            font-style: italic;
+            color: var(--forest);
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .testimonial-quote::before {
+            content: '"';
+            font-family: var(--font-display);
+            font-size: 5rem;
+            color: var(--gold-light);
+            position: absolute;
+            top: -2.5rem; left: 50%;
+            transform: translateX(-50%);
+            line-height: 1;
+            opacity: 0.5;
+        }
+        .testimonial-author {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .testimonial-source {
+            font-size: 0.8rem;
+            color: var(--gold-dark);
+            margin-top: 0.25rem;
+        }
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+        .testimonial-dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: rgba(26, 60, 52, 0.15);
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+            padding: 0;
+        }
+        .testimonial-dot.active {
+            background: var(--gold);
+            transform: scale(1.2);
+        }
+        .testimonial-dot:hover { background: var(--gold-light); }
+        .testimonial-badge-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(26, 60, 52, 0.08);
+        }
+        .testimonial-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        .testimonial-badge strong { color: var(--forest); }
+
+        /* === EINSATZGEBIET === */
+        .region { background: var(--warm-white); }
+        .region-header { text-align: center; margin-bottom: 3rem; }
+        .region-header h2 { margin-bottom: 0.75rem; }
+        .region-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .region-card {
+            background: var(--cream);
+            padding: 1.75rem;
+            border-radius: 12px;
+            border: 1px solid rgba(26, 60, 52, 0.06);
+            transition: all 0.3s;
+            cursor: default;
+        }
+        .region-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px var(--shadow);
+            border-color: var(--gold-light);
+        }
+        .region-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+        .region-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+        .region-card-tag {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gold-dark);
+            margin-top: 0.75rem;
+            padding: 0.25rem 0.6rem;
+            background: rgba(201, 169, 110, 0.1);
+            border-radius: 4px;
+        }
+
+        /* === CTA BAND === */
+        .cta-band {
+            background: linear-gradient(135deg, var(--forest) 0%, var(--forest-dark) 100%);
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-band::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 70% 30%, rgba(201,169,110,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .cta-band h2 { color: var(--cream); margin-bottom: 0.75rem; }
+        .cta-band p { color: rgba(255,255,255,0.7); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .cta-band .btn-primary { background: var(--gold); color: var(--forest-dark); }
+        .cta-band .btn-primary:hover { background: var(--gold-light); }
+
+        /* === KONTAKT === */
+        .contact { background: var(--cream); }
+        .contact-header { text-align: center; margin-bottom: 3rem; }
+        .contact-header h2 { margin-bottom: 0.75rem; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 40px var(--shadow);
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 0.4rem;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1.5px solid rgba(26, 60, 52, 0.12);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 16px;
+            color: var(--text);
+            background: var(--cream);
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--forest);
+        }
+        .form-group textarea { resize: vertical; min-height: 100px; }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .form-submit {
+            width: 100%;
+            padding: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        .form-note {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+            text-align: center;
+        }
+        .form-success {
+            display: none;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .form-success.show { display: block; }
+        .form-success svg { width: 48px; height: 48px; color: var(--forest); margin-bottom: 1rem; }
+        .form-success h3 { margin-bottom: 0.5rem; }
+        .form-success p { color: var(--text-light); }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-info h3 { margin-bottom: 1.5rem; font-size: 1.5rem; }
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(26, 60, 52, 0.06);
+        }
+        .contact-detail:last-of-type { border-bottom: none; }
+        .contact-detail-icon {
+            width: 44px; height: 44px;
+            background: rgba(26, 60, 52, 0.06);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-detail-icon svg { width: 20px; height: 20px; color: var(--forest); }
+        .contact-detail-text strong {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--forest);
+        }
+        .contact-detail-text span {
+            font-size: 0.88rem;
+            color: var(--text-light);
+        }
+        .contact-detail-text a {
+            color: var(--forest);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-detail-text a:hover { color: var(--gold-dark); }
+        .contact-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 2rem;
+            padding: 1rem 1.5rem;
+            background: #25d366;
+            color: white;
+            border-radius: 10px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .contact-whatsapp:hover {
+            background: #20bd5a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+        .contact-whatsapp svg { width: 22px; height: 22px; }
+
+        /* === FOOTER === */
+        .footer {
+            background: var(--forest-dark);
+            padding: 3rem 0 1.5rem;
+            color: rgba(255,255,255,0.6);
+        }
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .footer-brand { }
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 1rem;
+        }
+        .footer-logo-icon {
+            width: 44px; height: 44px;
+            background: rgba(201,169,110,0.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-logo-icon svg { width: 22px; height: 22px; color: var(--gold); }
+        .footer-logo-text {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--cream);
+        }
+        .footer-brand p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.6;
+        }
+        .footer h4 {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li { margin-bottom: 0.5rem; }
+        .footer-links a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 0.88rem;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--gold-light); }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            font-size: 0.78rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .footer-legal a {
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        .footer-legal a:hover { color: var(--gold-light); }
+
+        /* === LEGAL OVERLAYS === */
+        .legal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 10000;
+            background: rgba(15, 40, 32, 0.6);
+            backdrop-filter: blur(8px);
+            padding: 2rem;
+            overflow-y: auto;
+        }
+        .legal-overlay.show { display: flex; align-items: flex-start; justify-content: center; padding-top: 5rem; }
+        .legal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 700px;
+            width: 100%;
+            padding: 2.5rem;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        .legal-close {
+            position: absolute;
+            top: 1rem; right: 1rem;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            border: none;
+            background: var(--cream);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        .legal-close:hover { background: var(--cream-dark); }
+        .legal-content h2 { margin-bottom: 1.5rem; font-size: 1.5rem; }
+        .legal-content h3 { margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .legal-content p { font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-light); }
+
+        /* === COOKIE BANNER === */
+        .cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 1.5rem; left: 1.5rem; right: 1.5rem;
+            z-index: 9999;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            padding: 1.25rem 1.5rem;
+            max-width: 480px;
+        }
+        .cookie-banner.show { display: block; animation: fadeUp 0.4s ease; }
+        .cookie-banner p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .cookie-banner p a { color: var(--forest); }
+        .cookie-btns {
+            display: flex;
+            gap: 0.75rem;
+        }
+        .cookie-btns button {
+            padding: 0.55rem 1.2rem;
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+        }
+        .cookie-accept { background: var(--forest); color: var(--cream); }
+        .cookie-accept:hover { background: var(--forest-light); }
+        .cookie-decline { background: var(--cream); color: var(--text); }
+        .cookie-decline:hover { background: var(--cream-dark); }
+
+        /* === SCROLL REVEALS === */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* === WHATSAPP FLOAT === */
+        .wa-float {
+            position: fixed;
+            bottom: 1.5rem; right: 1.5rem;
+            z-index: 9990;
+            width: 56px; height: 56px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .wa-float:hover {
+            transform: scale(1.08) translateY(-2px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+        }
+        .wa-float svg { width: 26px; height: 26px; color: white; }
+
+        /* === MOBILE === */
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: white;
+                padding: 1.5rem;
+                box-shadow: 0 20px 40px var(--shadow);
+                gap: 1rem;
+                border-radius: 0 0 16px 16px;
+            }
+            .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .hero-visual { order: -1; }
+            .hero { padding-top: 6rem; min-height: auto; padding-bottom: 3rem; }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+            .trust-item:not(:last-child)::after { display: none; }
+            .problem-cards { grid-template-columns: 1fr; }
+            .quickcheck-inner { grid-template-columns: 1fr; gap: 2rem; }
+            .quickcheck-info { position: static; }
+            .qc-options { grid-template-columns: 1fr; }
+            .tab-layout { grid-template-columns: 1fr; }
+            .tab-image { order: -1; }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-image { max-width: 400px; margin: 0 auto; }
+            .about-highlights { grid-template-columns: 1fr; }
+            .region-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .hero-trust { gap: 1rem; }
+            .hero-ctas { flex-direction: column; }
+            .hero-ctas .btn { text-align: center; justify-content: center; }
+            .testimonial-badge-row { flex-direction: column; gap: 1rem; }
+        }
+        @media (max-width: 480px) {
+            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+            .tabs-nav { gap: 0.3rem; }
+            .tab-btn { padding: 0.5rem 0.9rem; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-logo">
+                    <div class="nav-logo-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                    </div>
+                    <span class="nav-logo-text">DENTZER</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li><a href="#ueber">Über mich</a></li>
+                    <li><a href="#stimmen">Kundenstimmen</a></li>
+                    <li><a href="#region">Einsatzgebiet</a></li>
+                    <li><a href="#kontakt" class="nav-cta">Kostenlos beraten</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menü">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        Inhabergeführt · Städteregion Aachen
+                    </div>
+                    <h1 class="word-reveal">Dein Haus verdient mehr als einen Makler. <em>Es verdient Vertrauen.</em></h1>
+                    <p class="subline">Du willst verkaufen — aber richtig. Mit jemandem, der deine Region kennt, dein Haus versteht und dich nicht allein lässt. 176 Bewertungen sagen: Hier bist du richtig.</p>
+                    <div class="hero-ctas">
+                        <a href="#quickcheck" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                            Kostenlose Wertermittlung
+                        </a>
+                        <a href="tel:+4924029056532" class="btn btn-secondary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            02402 — 905 65 32
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="hero-trust-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            176+ Bewertungen
+                        </div>
+                        <div class="hero-trust-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Kostenlose Erstberatung
+                        </div>
+                        <div class="hero-trust-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            Ausgebildete Fotografin
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="hero-visual-card">
+                        <div class="hero-stars">
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <p class="hero-review-text">„Frau Dentzer hat uns von der Preisgestaltung bis zur Übergabe in allen Fragen hervorragend beraten und unterstützt."</p>
+                        <p class="hero-review-author">Verifizierter Kunde</p>
+                        <div class="hero-review-badge">
+                            <div class="hero-review-badge-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div class="hero-review-badge-text">
+                                <strong>ProvenExpert</strong>
+                                176+ verifizierte Bewertungen
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAND -->
+    <div class="trust-band">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item reveal">
+                    <div class="trust-number" data-target="176" data-suffix="+">0</div>
+                    <div class="trust-label">Verifizierte Bewertungen</div>
+                </div>
+                <div class="trust-item reveal reveal-delay-1">
+                    <div class="trust-number" data-target="200" data-suffix="+">0</div>
+                    <div class="trust-label">Vermittelte Immobilien</div>
+                </div>
+                <div class="trust-item reveal reveal-delay-2">
+                    <div class="trust-number" data-target="15" data-suffix="+">0</div>
+                    <div class="trust-label">Jahre Erfahrung</div>
+                </div>
+                <div class="trust-item reveal reveal-delay-3">
+                    <div class="trust-number" data-target="100" data-suffix="%">0</div>
+                    <div class="trust-label">Persönliche Betreuung</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROBLEM / IDENTIFICATION -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="problem-inner">
+                <p class="eyebrow reveal">Kennst du das?</p>
+                <h2 class="reveal">Dein Haus zu verkaufen ist mehr als eine Unterschrift beim Notar</h2>
+                <p class="problem-text reveal">Ob Scheidung, Erbschaft, Umzug oder einfach ein neuer Lebensabschnitt — der Verkauf deiner Immobilie ist emotional und komplex. Du brauchst jemanden, der nicht nur den Markt kennt, sondern auch versteht, was auf dem Spiel steht.</p>
+            </div>
+            <div class="problem-cards">
+                <div class="problem-card reveal">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <h3>Was ist mein Haus wirklich wert?</h3>
+                    <p>Zu hoch angesetzt — keine Interessenten. Zu niedrig — Geld verschenkt. Eine professionelle Bewertung bringt Klarheit.</p>
+                </div>
+                <div class="problem-card reveal reveal-delay-1">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Wer hat die Zeit dafür?</h3>
+                    <p>Unterlagen beschaffen, Besichtigungen organisieren, Käufer prüfen — ein Vollzeitjob neben deinem Alltag.</p>
+                </div>
+                <div class="problem-card reveal reveal-delay-2">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Kann ich dem Makler vertrauen?</h3>
+                    <p>Bei der größten Transaktion deines Lebens willst du kein Franchise. Du willst einen Menschen, der sich verantwortlich fühlt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE FEATURE: QUICK CHECK -->
+    <section class="quickcheck" id="quickcheck">
+        <div class="container">
+            <div class="quickcheck-inner">
+                <div class="quickcheck-info reveal">
+                    <p class="eyebrow">Kostenlos & unverbindlich</p>
+                    <h2>Wie viel ist deine Immobilie wert?</h2>
+                    <p>In 3 kurzen Schritten bekommst du eine erste Einschätzung — und einen persönlichen Rückruf von mir.</p>
+                    <ul class="quickcheck-info-steps">
+                        <li class="active" id="stepIndicator1"><span class="step-num">1</span> Art der Immobilie</li>
+                        <li id="stepIndicator2"><span class="step-num">2</span> Lage & Größe</li>
+                        <li id="stepIndicator3"><span class="step-num">3</span> Deine Einschätzung</li>
+                    </ul>
+                </div>
+                <div class="quickcheck-widget reveal reveal-delay-1">
+                    <!-- Step 1 -->
+                    <div class="qc-step active" id="qcStep1">
+                        <h3>Was möchtest du bewerten lassen?</h3>
+                        <div class="qc-options" id="qcType">
+                            <div class="qc-option" onclick="selectOption(this, 'qcType')">
+                                <div class="qc-option-icon">🏠</div>
+                                Einfamilienhaus
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcType')">
+                                <div class="qc-option-icon">🏘️</div>
+                                Mehrfamilienhaus
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcType')">
+                                <div class="qc-option-icon">🏢</div>
+                                Eigentumswohnung
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcType')">
+                                <div class="qc-option-icon">🏗️</div>
+                                Grundstück
+                            </div>
+                        </div>
+                        <div class="qc-nav">
+                            <div></div>
+                            <button class="qc-btn qc-btn-next" onclick="nextStep(2)">Weiter →</button>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="qc-step" id="qcStep2">
+                        <h3>Wo befindet sich die Immobilie?</h3>
+                        <div class="qc-options" id="qcLocation">
+                            <div class="qc-option" onclick="selectOption(this, 'qcLocation')">
+                                <div class="qc-option-icon">📍</div>
+                                Stolberg
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcLocation')">
+                                <div class="qc-option-icon">📍</div>
+                                Eschweiler
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcLocation')">
+                                <div class="qc-option-icon">📍</div>
+                                Aachen
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcLocation')">
+                                <div class="qc-option-icon">📍</div>
+                                Andere Region
+                            </div>
+                        </div>
+                        <div class="qc-nav">
+                            <button class="qc-btn qc-btn-back" onclick="prevStep(1)">← Zurück</button>
+                            <button class="qc-btn qc-btn-next" onclick="nextStep(3)">Weiter →</button>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="qc-step" id="qcStep3">
+                        <h3>Wie schätzt du den Zustand ein?</h3>
+                        <div class="qc-options" id="qcCondition">
+                            <div class="qc-option" onclick="selectOption(this, 'qcCondition')">
+                                <div class="qc-option-icon">✨</div>
+                                Neuwertig / Saniert
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcCondition')">
+                                <div class="qc-option-icon">👍</div>
+                                Gepflegt
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcCondition')">
+                                <div class="qc-option-icon">🔧</div>
+                                Renovierungsbedarf
+                            </div>
+                            <div class="qc-option" onclick="selectOption(this, 'qcCondition')">
+                                <div class="qc-option-icon">🏚️</div>
+                                Stark sanierungsbedürftig
+                            </div>
+                        </div>
+                        <div class="qc-nav">
+                            <button class="qc-btn qc-btn-back" onclick="prevStep(2)">← Zurück</button>
+                            <button class="qc-btn qc-btn-next" onclick="showResult()">Ergebnis anzeigen</button>
+                        </div>
+                    </div>
+                    <!-- Result -->
+                    <div class="qc-step" id="qcResult">
+                        <div class="qc-result">
+                            <div class="qc-result-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <h3>Deine Anfrage ist bereit</h3>
+                            <p>Basierend auf deinen Angaben erstelle ich dir eine fundierte, kostenlose Wertermittlung. Persönlich, nicht automatisch — denn jede Immobilie ist einzigartig.</p>
+                            <a href="#kontakt" class="btn btn-primary" onclick="scrollToContact()">Jetzt Wertermittlung anfordern</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section class="leistungen" id="leistungen">
+        <div class="container">
+            <div class="leistungen-header">
+                <p class="eyebrow reveal">Meine Leistungen</p>
+                <h2 class="reveal">Von der Bewertung bis zur Schlüsselübergabe</h2>
+                <p class="reveal">Alles aus einer Hand — persönlich, professionell und immer in deinem Interesse.</p>
+            </div>
+            <div class="tabs-nav reveal">
+                <button class="tab-btn active" onclick="switchTab('verkauf')">Immobilienverkauf</button>
+                <button class="tab-btn" onclick="switchTab('bewertung')">Wertermittlung</button>
+                <button class="tab-btn" onclick="switchTab('foto')">Fotografie & Exposé</button>
+                <button class="tab-btn" onclick="switchTab('beratung')">Beratung</button>
+            </div>
+            <div class="tab-content active" id="tab-verkauf">
+                <div class="tab-layout">
+                    <div class="tab-text">
+                        <h3>Dein Haus in den richtigen Händen</h3>
+                        <p>Von der ersten Einschätzung bis zum Notartermin — ich übernehme den kompletten Verkaufsprozess. Du lehnst dich zurück, ich kümmere mich um alles.</p>
+                        <ul class="tab-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Marktgerechte Preisermittlung mit lokaler Expertise</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Professionelle Vermarktung auf allen relevanten Portalen</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Bonitätsprüfung und Käuferauswahl</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Kaufvertragsabwicklung und Notarkoordination</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Persönliche Begleitung bis zur Schlüsselübergabe</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="Schlüsselübergabe bei Immobilienverkauf" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-bewertung">
+                <div class="tab-layout">
+                    <div class="tab-text">
+                        <h3>Was ist deine Immobilie wirklich wert?</h3>
+                        <p>Keine Online-Schätzung, sondern eine fundierte Bewertung vor Ort. Ich kenne den Markt in Stolberg, Eschweiler und der gesamten Städteregion wie meine Westentasche.</p>
+                        <ul class="tab-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Kostenlose und unverbindliche Erstbewertung</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Vergleichswertanalyse aktueller Marktdaten</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Berücksichtigung lokaler Besonderheiten</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Ehrliche Einschätzung — auch wenn es unbequem ist</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" alt="Immobilienbewertung und Marktanalyse" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-foto">
+                <div class="tab-layout">
+                    <div class="tab-text">
+                        <h3>Deine Immobilie ins beste Licht gerückt</h3>
+                        <p>Als ausgebildete Fotografin weiß ich, wie man Räume zum Strahlen bringt. Professionelle Fotos sind der Grundstein für jede erfolgreiche Vermarktung.</p>
+                        <ul class="tab-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Professionelles Immobilien-Shooting vor Ort</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Hochwertiges Exposé mit allen wichtigen Daten</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Home-Staging-Beratung für maximale Wirkung</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Vermarktung auf Website, Portalen und Social Media</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Professionelle Immobilienfotografie" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-beratung">
+                <div class="tab-layout">
+                    <div class="tab-text">
+                        <h3>Mehr als Verkaufen — gemeinsam die richtige Entscheidung treffen</h3>
+                        <p>Scheidung, Erbschaft, Altersvorsorge — hinter jedem Verkauf steht eine Geschichte. Ich nehme mir die Zeit, die es braucht.</p>
+                        <ul class="tab-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Persönliches Erstgespräch ohne Zeitdruck</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Unterstützung bei Finanzierungsfragen</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Energieausweis-Erstellung</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Koordination von Handwerkern und Gutachtern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80" alt="Persönliche Beratung im Immobilienverkauf" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UEBER ANNE -->
+    <section class="about" id="ueber">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-image-main">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Anne Dentzer — Immobilienmaklerin Stolberg" loading="lazy">
+                    </div>
+                    <div class="about-image-float">
+                        <div class="about-image-float-number">176+</div>
+                        <div class="about-image-float-text">Bewertungen auf<br>ProvenExpert</div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="eyebrow reveal">Über mich</p>
+                    <h2 class="reveal">Anne Dentzer — deine Maklerin, nicht irgendeine Firma</h2>
+                    <p class="subline reveal">Inhabergeführt bedeutet: Wenn du anrufst, gehe ich ran. Wenn du Fragen hast, antworte ich. Persönlich.</p>
+                    <p class="about-story reveal">Als Immobilienmaklerin in Stolberg und der Städteregion Aachen kenne ich nicht nur den Markt — ich kenne die Straßen, die Nachbarschaften und die Menschen. Meine zusätzliche Ausbildung als Fotografin ermöglicht es mir, jede Immobilie professionell in Szene zu setzen — ohne externes Team, ohne Umwege. Was mich antreibt? Das Vertrauen meiner Kunden. 176 Bewertungen sind kein Zufall — sie sind das Ergebnis von Engagement, Ehrlichkeit und dem Anspruch, jeden Verkauf so zu begleiten, als wäre es mein eigener.</p>
+                    <div class="about-highlights reveal">
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                            </div>
+                            <div class="about-highlight-text">Ausgebildete Fotografin<span>Professionelle Fotos inklusive</span></div>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="about-highlight-text">Lokale Marktexpertin<span>Stolberg · Eschweiler · Aachen</span></div>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg>
+                            </div>
+                            <div class="about-highlight-text">Großes Netzwerk<span>Käufer, Notar, Handwerker</span></div>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div class="about-highlight-text">Fortbildungspflicht 100%+<span>Mehr als gesetzlich gefordert</span></div>
+                        </div>
+                    </div>
+                    <a href="#kontakt" class="btn btn-primary reveal">Lass uns persönlich sprechen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="stimmen">
+        <div class="container">
+            <div class="testimonials-header">
+                <p class="eyebrow reveal">Kundenstimmen</p>
+                <h2 class="reveal">Was andere über die Zusammenarbeit sagen</h2>
+            </div>
+            <div class="testimonial-card reveal" id="testimonialCard">
+                <div class="testimonial-quote" id="testimonialQuote">„Frau Dentzer ist eine professionelle, sympathische und überaus engagierte Maklerin. Sie hat sowohl Verkäufer als auch Käufer bestens beraten."</div>
+                <div class="testimonial-author" id="testimonialAuthor">Verifizierter Kunde · ProvenExpert</div>
+                <div class="testimonial-source" id="testimonialSource">★★★★★</div>
+            </div>
+            <div class="testimonial-nav reveal">
+                <button class="testimonial-dot active" onclick="showTestimonial(0)"></button>
+                <button class="testimonial-dot" onclick="showTestimonial(1)"></button>
+                <button class="testimonial-dot" onclick="showTestimonial(2)"></button>
+                <button class="testimonial-dot" onclick="showTestimonial(3)"></button>
+                <button class="testimonial-dot" onclick="showTestimonial(4)"></button>
+            </div>
+            <div class="testimonial-badge-row reveal">
+                <div class="testimonial-badge">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="#c9a96e"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span><strong>4,9 / 5,0</strong> Durchschnitt</span>
+                </div>
+                <div class="testimonial-badge">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span><strong>176+</strong> verifizierte Bewertungen</span>
+                </div>
+                <div class="testimonial-badge">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#c9a96e" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>100%</strong> Empfehlungsrate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EINSATZGEBIET -->
+    <section class="region" id="region">
+        <div class="container">
+            <div class="region-header">
+                <p class="eyebrow reveal">Einsatzgebiet</p>
+                <h2 class="reveal">Verwurzelt in der Städteregion Aachen</h2>
+                <p class="reveal" style="max-width:560px;margin:0 auto;color:var(--text-light);">Jede Straße hat ihren Charakter, jeder Stadtteil seine Besonderheit. Diese Kenntnis fließt in jede Bewertung und jeden Verkauf.</p>
+            </div>
+            <div class="region-grid">
+                <div class="region-card reveal">
+                    <h3>Stolberg</h3>
+                    <p>Von Breinig bis Mausbach, von Büsbach bis Zweifall — hier bin ich zu Hause und kenne jeden Winkel.</p>
+                    <span class="region-card-tag">Kerngebiet</span>
+                </div>
+                <div class="region-card reveal reveal-delay-1">
+                    <h3>Eschweiler</h3>
+                    <p>Dürwiß, Röhe, Weisweiler — familienfreundlich und gut angebunden. Ein Markt mit Potenzial.</p>
+                    <span class="region-card-tag">Kerngebiet</span>
+                </div>
+                <div class="region-card reveal reveal-delay-2">
+                    <h3>Aachen</h3>
+                    <p>Von der Innenstadt bis Laurensberg — die Kaiserstadt bietet vielfältige Lagen und Ansprüche.</p>
+                    <span class="region-card-tag">Aktiv</span>
+                </div>
+                <div class="region-card reveal reveal-delay-1">
+                    <h3>Würselen</h3>
+                    <p>Stark nachgefragt bei Familien. Gute Infrastruktur trifft auf überschaubare Größe.</p>
+                    <span class="region-card-tag">Aktiv</span>
+                </div>
+                <div class="region-card reveal reveal-delay-2">
+                    <h3>Alsdorf</h3>
+                    <p>Im Wandel — von der Bergbaustadt zum attraktiven Wohnstandort mit wachsender Nachfrage.</p>
+                    <span class="region-card-tag">Aktiv</span>
+                </div>
+                <div class="region-card reveal reveal-delay-3">
+                    <h3>Herzogenrath</h3>
+                    <p>Grenzlage zum Dreiländereck. Besonders interessant für Pendler und internationale Käufer.</p>
+                    <span class="region-card-tag">Auf Anfrage</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="cta-band">
+        <div class="container">
+            <p class="eyebrow reveal" style="color:var(--gold-light);">Bereit für den nächsten Schritt?</p>
+            <h2 class="reveal">Lass uns unverbindlich sprechen</h2>
+            <p class="reveal">Kein Verkaufsdruck, kein Kleingedrucktes. Nur ein ehrliches Gespräch über deine Immobilie.</p>
+            <a href="#kontakt" class="btn btn-primary reveal">Erstgespräch vereinbaren</a>
+        </div>
+    </div>
+
+    <!-- KONTAKT -->
+    <section class="contact" id="kontakt">
+        <div class="container">
+            <div class="contact-header">
+                <p class="eyebrow reveal">Kontakt</p>
+                <h2 class="reveal">Schreib mir — oder ruf einfach an</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form reveal" id="contactFormWrapper">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+                        <input type="hidden" name="subject" value="Neue Anfrage über dentzer-immobilien.de">
+                        <input type="hidden" name="from_name" value="DENTZER IMMOBILIEN Website">
+                        <input type="checkbox" name="botcheck" style="display:none">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Dein Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Für den Rückruf">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="anliegen">Dein Anliegen</label>
+                            <select id="anliegen" name="anliegen">
+                                <option value="">Bitte wählen...</option>
+                                <option value="Immobilie verkaufen">Ich möchte meine Immobilie verkaufen</option>
+                                <option value="Wertermittlung">Ich möchte eine kostenlose Wertermittlung</option>
+                                <option value="Immobilie kaufen">Ich suche eine Immobilie</option>
+                                <option value="Beratung">Ich brauche Beratung</option>
+                                <option value="Sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" placeholder="Erzähl mir kurz, worum es geht..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">Nachricht senden</button>
+                        <p class="form-note">Ich melde mich in der Regel innerhalb von 24 Stunden persönlich bei dir.</p>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <h3>Vielen Dank für deine Nachricht!</h3>
+                        <p>Ich melde mich schnellstmöglich persönlich bei dir. Versprochen.</p>
+                    </div>
+                </div>
+                <div class="contact-info reveal reveal-delay-1">
+                    <h3>Oder direkt erreichen</h3>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <strong>Telefon</strong>
+                            <span><a href="tel:+4924029056532">02402 — 905 65 32</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <strong>E-Mail</strong>
+                            <span><a href="mailto:anne@dentzer-immobilien.de">anne@dentzer-immobilien.de</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <strong>Adresse</strong>
+                            <span>Fischbachstr. 8, 52224 Stolberg</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                        </div>
+                        <div class="contact-detail-text">
+                            <strong>Mobil</strong>
+                            <span><a href="tel:+4915785651662">01578 — 565 16 62</a></span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/4915785651662?text=Hallo%20Frau%20Dentzer%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Immobilienbewertung." class="contact-whatsapp" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp schreiben
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        </div>
+                        <span class="footer-logo-text">DENTZER IMMOBILIEN</span>
+                    </div>
+                    <p>Inhabergeführte Immobilienmaklerin für die Städteregion Aachen. Persönlich, kompetent, erfolgreich — seit über 15 Jahren.</p>
+                </div>
+                <div>
+                    <h4>Leistungen</h4>
+                    <ul class="footer-links">
+                        <li><a href="#leistungen">Immobilienverkauf</a></li>
+                        <li><a href="#quickcheck">Wertermittlung</a></li>
+                        <li><a href="#leistungen">Fotografie & Exposé</a></li>
+                        <li><a href="#leistungen">Energieausweis</a></li>
+                        <li><a href="#kontakt">Beratung</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Kontakt</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+4924029056532">02402 — 905 65 32</a></li>
+                        <li><a href="tel:+4915785651662">01578 — 565 16 62</a></li>
+                        <li><a href="mailto:anne@dentzer-immobilien.de">anne@dentzer-immobilien.de</a></li>
+                        <li><a href="https://wa.me/4915785651662" target="_blank" rel="noopener">WhatsApp</a></li>
+                        <li><a href="https://www.provenexpert.com/de-de/dentzer-immobilien/" target="_blank" rel="noopener">ProvenExpert</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 DENTZER IMMOBILIEN · Inh. Anne Dentzer · Fischbachstr. 8 · 52224 Stolberg</span>
+                <div class="footer-legal">
+                    <a href="#" onclick="openLegal('impressum'); return false;">Impressum</a>
+                    <a href="#" onclick="openLegal('datenschutz'); return false;">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/4915785651662?text=Hallo%20Frau%20Dentzer%2C%20ich%20habe%20eine%20Frage%20zu%20meiner%20Immobilie." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Diese Website nutzt Cookies für grundlegende Funktionen. Mehr dazu in der <a href="#" onclick="openLegal('datenschutz'); return false;">Datenschutzerklärung</a>.</p>
+        <div class="cookie-btns">
+            <button class="cookie-accept" onclick="acceptCookies()">Akzeptieren</button>
+            <button class="cookie-decline" onclick="declineCookies()">Nur notwendige</button>
+        </div>
+    </div>
+
+    <!-- LEGAL: IMPRESSUM -->
+    <div class="legal-overlay" id="impressum">
+        <div class="legal-content">
+            <button class="legal-close" onclick="closeLegal('impressum')">✕</button>
+            <h2>Impressum</h2>
+            <h3>Angaben gemäß § 5 TMG</h3>
+            <p>DENTZER IMMOBILIEN<br>Inh. Anne Dentzer<br>Fischbachstr. 8<br>52224 Stolberg</p>
+            <h3>Kontakt</h3>
+            <p>Telefon: +49 (0) 2402 — 905 65 32<br>Mobil: +49 (0) 1578 — 565 16 62<br>E-Mail: anne@dentzer-immobilien.de</p>
+            <h3>Umsatzsteuer-ID</h3>
+            <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: [wird ergänzt]</p>
+            <h3>Berufsbezeichnung und berufsrechtliche Regelungen</h3>
+            <p>Berufsbezeichnung: Immobilienmaklerin<br>Zuständige Aufsichtsbehörde: Ordnungsamt Stolberg<br>Erlaubnis nach § 34c GewO</p>
+            <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+            <p>Anne Dentzer<br>Fischbachstr. 8<br>52224 Stolberg</p>
+            <h3>EU-Streitschlichtung</h3>
+            <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            <h3>Haftung für Inhalte</h3>
+            <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+            <h3>Haftung für Links</h3>
+            <p>Unser Angebot enthält Links zu externen Websites Dritter. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.</p>
+        </div>
+    </div>
+
+    <!-- LEGAL: DATENSCHUTZ -->
+    <div class="legal-overlay" id="datenschutz">
+        <div class="legal-content">
+            <button class="legal-close" onclick="closeLegal('datenschutz')">✕</button>
+            <h2>Datenschutzerklärung</h2>
+            <h3>1. Verantwortliche Stelle</h3>
+            <p>DENTZER IMMOBILIEN, Inh. Anne Dentzer, Fischbachstr. 8, 52224 Stolberg. E-Mail: anne@dentzer-immobilien.de</p>
+            <h3>2. Hosting</h3>
+            <p>Diese Website wird bei einem deutschen Hosting-Anbieter gehostet. Die Server befinden sich in Deutschland. Beim Besuch der Website werden automatisch Informationen in Server-Log-Dateien gespeichert (IP-Adresse, Browsertyp, Zeitpunkt des Zugriffs). Diese Daten werden nach 7 Tagen gelöscht.</p>
+            <h3>3. SSL-Verschlüsselung</h3>
+            <p>Diese Website nutzt aus Sicherheitsgründen eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennst du an der Zeichenfolge „https://" in der Adresszeile deines Browsers.</p>
+            <h3>4. Kontaktformular</h3>
+            <p>Wenn du uns per Kontaktformular Anfragen zukommen lässt, werden deine Angaben zur Bearbeitung gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter. Die Verarbeitung erfolgt über den Dienst Web3Forms. Deine Daten werden per E-Mail an uns übermittelt und nicht auf fremden Servern gespeichert.</p>
+            <h3>5. Google Fonts</h3>
+            <p>Diese Website nutzt Google Fonts zur Darstellung von Schriftarten. Beim Aufruf der Seite lädt dein Browser die benötigten Schriftarten in deinen Cache. Dabei wird deine IP-Adresse an Google übermittelt. Weitere Informationen: https://policies.google.com/privacy</p>
+            <h3>6. Cookies</h3>
+            <p>Diese Website verwendet technisch notwendige Cookies sowie optionale Cookies für Analyse-Zwecke. Du kannst die Cookie-Einstellungen jederzeit über den Cookie-Banner anpassen.</p>
+            <h3>7. Deine Rechte</h3>
+            <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Kontaktiere uns dafür unter anne@dentzer-immobilien.de.</p>
+            <h3>8. Cloudflare</h3>
+            <p>Diese Website nutzt den CDN-Dienst Cloudflare. Cloudflare kann technische Daten wie IP-Adressen verarbeiten, um die Auslieferung der Website zu optimieren und Angriffe abzuwehren. Weitere Informationen: https://www.cloudflare.com/privacypolicy/</p>
+        </div>
+    </div>
+
+    <script>
+        /* === SCROLL RESTORATION === */
+        if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+        window.scrollTo(0, 0);
+
+        /* === NAVIGATION === */
+        const nav = document.getElementById('nav');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        navLinks.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => navLinks.classList.remove('open'));
+        });
+
+        /* === SCROLL REVEALS === */
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        /* === ANIMATED COUNTERS === */
+        const counters = document.querySelectorAll('.trust-number');
+        let counterDone = false;
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counterDone) {
+                    counterDone = true;
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.dataset.target);
+                        const suffix = counter.dataset.suffix || '';
+                        let current = 0;
+                        const increment = target / 60;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+                            counter.textContent = Math.floor(current) + suffix;
+                        }, 25);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        counters.forEach(c => counterObserver.observe(c));
+
+        /* === QUICK CHECK === */
+        function selectOption(el, group) {
+            document.querySelectorAll('#' + group + ' .qc-option').forEach(o => o.classList.remove('selected'));
+            el.classList.add('selected');
+        }
+
+        function nextStep(step) {
+            document.querySelectorAll('.qc-step').forEach(s => s.classList.remove('active'));
+            document.getElementById('qcStep' + step).classList.add('active');
+            updateStepIndicators(step);
+        }
+
+        function prevStep(step) {
+            document.querySelectorAll('.qc-step').forEach(s => s.classList.remove('active'));
+            document.getElementById('qcStep' + step).classList.add('active');
+            updateStepIndicators(step);
+        }
+
+        function showResult() {
+            document.querySelectorAll('.qc-step').forEach(s => s.classList.remove('active'));
+            document.getElementById('qcResult').classList.add('active');
+            updateStepIndicators(4);
+        }
+
+        function updateStepIndicators(activeStep) {
+            for (let i = 1; i <= 3; i++) {
+                const indicator = document.getElementById('stepIndicator' + i);
+                indicator.classList.toggle('active', i <= activeStep);
+            }
+        }
+
+        function scrollToContact() {
+            document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        /* === TABS === */
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(tb => tb.classList.remove('active'));
+            document.getElementById('tab-' + tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        /* === TESTIMONIALS === */
+        const testimonials = [
+            { quote: '„Frau Dentzer ist eine professionelle, sympathische und überaus engagierte Maklerin. Sie hat sowohl Verkäufer als auch Käufer bestens beraten."', author: 'Verifizierter Kunde · ProvenExpert', source: '★★★★★' },
+            { quote: '„Immer erreichbar, sehr kompetent, reibungslose Durchführung. Einfach sehr zufrieden und absolut weiterzuempfehlen!"', author: 'Verifizierter Kunde · ProvenExpert', source: '★★★★★' },
+            { quote: '„Wir fühlten uns immer gut aufgehoben. Immer ein netter Kontakt, zu jeder Zeit, und stets gut beraten!"', author: 'Familie L. aus Köln · ProvenExpert', source: '★★★★★' },
+            { quote: '„Top Maklerin. Sie hat uns sehr gut beraten und unterstützt beim Verkauf unserer Immobilie. Von uns bekommt sie in allem 5 Sterne."', author: 'Verifizierter Kunde · ProvenExpert', source: '★★★★★' },
+            { quote: '„Der Verkauf wurde professionell abgewickelt. Von der Preisgestaltung bis zur Übergabe in allen Fragen hervorragend beraten."', author: 'Verifizierter Kunde · ProvenExpert', source: '★★★★★' }
+        ];
+
+        let currentTestimonial = 0;
+        function showTestimonial(index) {
+            currentTestimonial = index;
+            const card = document.getElementById('testimonialCard');
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(10px)';
+            setTimeout(() => {
+                document.getElementById('testimonialQuote').textContent = testimonials[index].quote;
+                document.getElementById('testimonialAuthor').textContent = testimonials[index].author;
+                document.getElementById('testimonialSource').textContent = testimonials[index].source;
+                document.querySelectorAll('.testimonial-dot').forEach((d, i) => d.classList.toggle('active', i === index));
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 250);
+        }
+
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 6000);
+
+        /* === CONTACT FORM === */
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            }).then(res => {
+                if (res.ok) {
+                    form.style.display = 'none';
+                    document.getElementById('formSuccess').classList.add('show');
+                }
+            }).catch(() => {
+                form.style.display = 'none';
+                document.getElementById('formSuccess').classList.add('show');
+            });
+        });
+
+        /* === LEGAL === */
+        function openLegal(id) {
+            document.getElementById(id).classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLegal(id) {
+            document.getElementById(id).classList.remove('show');
+            document.body.style.overflow = '';
+        }
+        document.querySelectorAll('.legal-overlay').forEach(overlay => {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.remove('show');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        /* === COOKIES === */
+        function acceptCookies() {
+            localStorage.setItem('cookies_accepted', 'all');
+            document.getElementById('cookieBanner').classList.remove('show');
+        }
+        function declineCookies() {
+            localStorage.setItem('cookies_accepted', 'necessary');
+            document.getElementById('cookieBanner').classList.remove('show');
+        }
+        if (!localStorage.getItem('cookies_accepted')) {
+            setTimeout(() => {
+                document.getElementById('cookieBanner').classList.add('show');
+            }, 2000);
+        }
+
+        /* === WORD REVEAL ANIMATION === */
+        document.querySelectorAll('.word-reveal').forEach(el => {
+            const text = el.innerHTML;
+            const words = text.split(/\s+/);
+            el.innerHTML = '';
+            words.forEach((word, index) => {
+                const span = document.createElement('span');
+                span.innerHTML = word;
+                span.style.opacity = '0';
+                span.style.transform = 'translateY(20px)';
+                span.style.transition = `all 0.5s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.05}s`;
+                span.style.display = 'inline-block';
+                span.style.marginRight = '0.25em';
+                el.appendChild(span);
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        el.querySelectorAll('span').forEach(span => {
+                            span.style.opacity = '1';
+                            span.style.transform = 'translateY(0)';
+                        });
+                    }
+                });
+            }, { threshold: 0.3 });
+            observer.observe(el);
+        });
+
+        /* === SMOOTH SCROLL === */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        /* === TESTIMONIAL CARD TRANSITION === */
+        const testimonialCardEl = document.getElementById('testimonialCard');
+        testimonialCardEl.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+    </script>
+
+    <!-- Google Ads gtag (Consent Mode) -->
+    <!-- Uncomment and add your Ads ID:
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied' });
+        gtag('js', new Date());
+        gtag('config', 'AW-XXXXXXXXX');
+
+        function acceptCookiesGtag() {
+            gtag('consent', 'update', { 'ad_storage': 'granted', 'analytics_storage': 'granted' });
+        }
+    </script>
+    -->
+
+</body>
+</html>
